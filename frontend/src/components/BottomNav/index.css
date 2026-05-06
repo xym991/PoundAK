@@ -1,0 +1,41 @@
+._bottom-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin: 12px 0 8px;
+}
+._bottom-nav button {
+  border: 3px solid #454545;
+  height: 70px;
+  box-sizing: border-box;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-width: 8px;
+  transition: all 0.3s var(--curve);
+}
+._bottom-nav button * {
+  transition: all 0.3s var(--curve);
+}
+._bottom-nav button:hover,
+._bottom-nav button.active {
+  border-color: var(--red);
+}
+
+svg.discord {
+  height: 42px;
+  width: 42px;
+}
+
+svg.discord path {
+  height: 20px;
+  width: 20px;
+  fill: #777 !important;
+}
+._bottom-nav button:hover svg path,
+._bottom-nav button.active svg path {
+  fill: #ccc !important;
+}

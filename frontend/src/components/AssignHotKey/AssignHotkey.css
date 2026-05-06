@@ -1,0 +1,40 @@
+._assign-hot-keys {
+  width: 360px;
+  padding: 0;
+  background: transparent;
+}
+._assign-hot-keys .container {
+  background: #202020;
+  border-color: #454545;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  height: 120px;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+._assign-hot-keys .buttons button {
+  flex: 1;
+  border-radius: 0;
+  height: 50px;
+  background: #202020;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #454545;
+  color: #ccc;
+  transition: all 0.3s var(--curve);
+}
+._assign-hot-keys .buttons button:hover {
+  color: #fff;
+}
+._assign-hot-keys .key {
+  border-radius: 0;
+  background: #090909;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(#454545, #141414);
+  font-weight: 400;
+}
+._assign-hot-keys .buttons {
+  gap: 1rem;
+}

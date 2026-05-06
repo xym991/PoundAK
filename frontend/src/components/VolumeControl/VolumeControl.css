@@ -1,0 +1,28 @@
+._vol {
+  position: absolute;
+  right: 8px;
+  padding: 0;
+  top: 48px;
+}
+._vol span svg {
+  fill: #aaa;
+  transition: all 0.2s var(--curve);
+  min-width: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+._vol span {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+  transform: translateY(-50%);
+  min-width: 30px;
+  align-items: start;
+  justify-content: start;
+}
+._vol span svg:hover {
+  fill: #fff;
+}

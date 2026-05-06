@@ -1,0 +1,32 @@
+._header {
+  height: 56px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: #000000;
+}
+.__logo {
+  height: 56px;
+  width: 100%;
+  object-fit: cover;
+}
+._header input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 6px;
+  background: linear-gradient(to right, #454545, #ccc);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+._header input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: white;
+  /* border: 2px solid #007bff; */
+  border-radius: 50%;
+  cursor: pointer;
+}

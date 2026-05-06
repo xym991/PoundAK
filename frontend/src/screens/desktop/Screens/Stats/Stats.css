@@ -1,0 +1,102 @@
+._stats ._stat {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 260px;
+  height: 50px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 12px;
+  position: relative;
+  cursor: pointer;
+  gap: 1rem;
+}
+._stats ._stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: start;
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+._stats ._stat * {
+  z-index: 1;
+}
+
+._stat .today {
+  margin-left: auto;
+  font-size: 20px;
+}
+
+._stat .diff {
+  font-size: 12px;
+  position: absolute;
+  color: var(--green);
+  left: 100%;
+}
+._stat .diff.n {
+  color: #cc1900;
+}
+
+._stat > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transform: scale(1.06);
+  transition: all 0.3s var(--curve);
+}
+._stat svg path {
+  transition: all 0.3s var(--curve);
+}
+._stat:hover h2,
+._stat.active h2 {
+  color: white;
+}
+._stat:hover svg,
+._stat.active svg {
+  left: -0.5rem;
+}
+._stat:hover > svg .stroked,
+._stat.active > svg .stroked {
+  stroke: url(#gradient2) !important;
+}
+._stat:hover svg .filled,
+._stat.active svg .filled {
+  fill: var(--red);
+}
+#gradient2 * {
+  stop-color: var(--red);
+}
+#gradient1 * {
+  stop-color: #c6c6c6;
+}
+
+._stats ._graph {
+  flex: 1;
+}
+._stats .recharts-tooltip-wrapper {
+  box-shadow: 0px 0px 16px var(--redcc);
+  border: none;
+  outline: none;
+}
+._stats .recharts-default-tooltip {
+  border: 2px solid #ccc;
+  pad: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: -0.5rem;
+}
+._stats .recharts-default-tooltip * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.custom-tooltip * {
+  text-transform: uppercase !important;
+}
+.custom-tooltip h3 {
+  font-weight: 500;
+  color: var(--orange);
+}

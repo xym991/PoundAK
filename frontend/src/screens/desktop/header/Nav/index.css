@@ -1,0 +1,50 @@
+._nav {
+  display: flex;
+  align-items: end;
+  gap: 0;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 56px;
+  top: -70px;
+  z-index: 10;
+}
+
+._nav ._button {
+  width: 150px;
+  height: 100%;
+  font-size: 20px;
+  padding-top: 4px;
+  transition: all 0.3s var(--curve);
+  border: 3px solid #222;
+}
+._nav ._button:hover,
+._nav ._button.active {
+  color: white;
+  border-bottom-color: var(--red);
+  background-color: #333;
+}
+.login-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #fff;
+  width: 220px;
+  height: 32px;
+  background-color: var(--red);
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-preview img {
+  height: 22px;
+}
+._nav .preview {
+  position: absolute;
+  top: 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}

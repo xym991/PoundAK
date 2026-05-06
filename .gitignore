@@ -1,0 +1,85 @@
+# ------------------------------
+# Node / General
+# ------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Next.js
+# ------------------------------
+.next/
+out/
+build/
+dist/
+
+# Next.js cache
+.cache/
+
+# ------------------------------
+# Express / Backend
+# ------------------------------
+coverage/
+.tmp/
+.temp/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# ------------------------------
+# Overwolf
+# ------------------------------
+# Overwolf build artifacts (adjust if your structure differs)
+overwolf/build/
+overwolf/dist/
+overwolf/.cache/
+
+# Overwolf logs / temp
+overwolf/logs/
+overwolf/tmp/
+
+# ------------------------------
+# IDE / Editor
+# ------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------
+# TypeScript
+# ------------------------------
+*.tsbuildinfo
+
+# ------------------------------
+# Testing
+# ------------------------------
+coverage/
+jest-cache/
+
+# ------------------------------
+# Misc
+# ------------------------------
+*.tgz
+*.bak
+*.orig

@@ -1,0 +1,356 @@
+._dashboard img {
+  height: fit-content;
+}
+._dashboard {
+  padding: 0.25rem 1rem 0 !important;
+  /* padding-top: 1.5rem !important; */
+}
+
+._dashboard .dashboard {
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: sans-serif;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+._dashboard * {
+  font-family: var(--font-oxanium) !important;
+}
+
+._dashboard .user-bar {
+  display: flex;
+  margin-top: 4px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._dashboard .user-avatar {
+  width: 40px;
+  height: 40px;
+  background: gray;
+  border-radius: 50%;
+}
+
+._dashboard .username {
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+._dashboard .points {
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+}
+._dashboard .points img {
+  width: 24px;
+  height: 24px;
+}
+
+._dashboard .green {
+  color: #9f0;
+}
+
+._dashboard .pillars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+._dashboard .section-row > div {
+  padding: 0.9rem;
+  border: 1px solid #292929;
+  background-color: #0c0c0c;
+}
+._dashboard .track {
+  flex: 1;
+  background: #121212;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+._dashboard .section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+._dashboard .pillar-cards {
+  display: flex;
+  gap: 12px;
+}
+
+._dashboard .stat-card {
+  flex: 1;
+  background: #202020;
+  padding: 16px;
+}
+
+._dashboard .stat-header {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+._dashboard .stat-header .stat-icon {
+  overflow: hidden;
+  width: fit-content;
+}
+._dashboard .stat-header .stat-icon svg {
+  max-width: 54px;
+  height: 32px;
+  fill: #aaa;
+  display: flex;
+  align-items: start;
+  align-self: baseline;
+  justify-content: center;
+  margin-right: -12px;
+  overflow: visible;
+}
+._dashboard .stat-header .stat-icon path {
+  transform: scale(0.6);
+  z-index: 10;
+}
+
+._dashboard .stat-value {
+  font-size: 20px;
+  color: #ccc;
+  position: relative;
+}
+._dashboard .stat-card .flex > svg {
+  margin-left: auto !important;
+  margin-bottom: 5px !important;
+  display: block;
+  margin-right: -10px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+._dashboard .stat-subtext {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+._dashboard .task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: max-content;
+  flex: 1;
+}
+
+._dashboard .task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 102%;
+  font-weight: 400;
+}
+
+._dashboard .task-circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  /* background: #fff; */
+  margin-right: 4px;
+  transition: all 0.2s ease-in-out;
+}
+._dashboard .task-done {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  /* background: #fff; */
+  margin-right: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+._dashboard .task-name {
+  flex: 1;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 2px;
+}
+
+._dashboard .task-xp {
+  color: #aaa;
+  font-size: 12px;
+}
+
+._dashboard .view-tasks {
+  font-size: 13px;
+  color: #adadad;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+._dashboard .workout-section {
+  padding: 12px;
+  border: 1px solid #292929;
+  background-color: #0c0c0c;
+}
+
+._dashboard .workout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+._dashboard .browse-link {
+  font-size: 12px;
+  color: #adadad;
+  text-decoration: underline;
+}
+
+._dashboard .workout-row {
+  display: flex;
+  gap: 12px;
+}
+
+._dashboard .workout-card {
+  background: #181818;
+  padding: 12px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+._dashboard .recommended-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #444;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+._dashboard .workout-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+._dashboard .workout-play-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+._dashboard .play-button {
+  font-size: 30px;
+  min-width: 160px;
+  height: 90px;
+  background: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._dashboard .workout-meta {
+  font-size: 13px;
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+}
+.task-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-circle.completed {
+  background-color: #fff;
+}
+
+.task-circle .checkmark {
+  color: white;
+  font-size: 12px;
+  line-height: 1;
+}
+._dashboard .overlay {
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  top: 1px;
+  left: 1px;
+  z-index: 1;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #111a;
+  backdrop-filter: blur(8px);
+  gap: 6px;
+  border: 2px solid #303030;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  box-sizing: border-box;
+  min-height: 99%;
+  padding: 8px;
+}
+._dashboard .tag {
+  font-size: 10px;
+  text-transform: uppercase;
+  border: 1px solid #9c27b0;
+  padding: 0px 4px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  font-weight: 400;
+  justify-content: center;
+  height: 18px;
+  line-height: 6px;
+}
+.xp-gained {
+  border: 1px solid #454545;
+  padding: 0.25rem 1rem;
+  position: relative;
+  transition: all 0.3s var(--curve);
+  max-width: fit-content;
+  z-index: 10;
+}
+.xp-gained p {
+  text-transform: none;
+  color: #aaa;
+}
+.xp-gained:hover::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: linear-gradient(#181818, #45454544, var(--orange44));
+  /* z-index: 2; */
+  height: 100%;
+  transition: all 0.3s var(--curve);
+  width: 100%;
+}
+
+.xp-gained:hover {
+  border-color: var(--orange) !important;
+  color: #fff;
+}
+.xp-gained * {
+  z-index: 10;
+}
+.badge-item {
+  background-color: #363636;
+}

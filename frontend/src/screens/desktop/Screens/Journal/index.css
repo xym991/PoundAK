@@ -1,0 +1,98 @@
+.calender h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.calender {
+  font-weight: 600;
+}
+._journal .chat,
+._journal .message-box {
+  border: 1px solid #292929;
+  position: relative;
+  background-color: #0c0c0c;
+}
+._journal {
+  padding-bottom: 1rem !important;
+  padding-top: 75px !important;
+}
+._journal .message.coach > h2 {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+}
+._journal .message.user {
+  display: flex;
+  flex-direction: column;
+  background-color: #252525;
+  gap: 0.6rem;
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: auto;
+  max-width: 80%;
+}
+._journal .message.coach {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  gap: 0.5rem;
+  font-weight: 400;
+  font-size: 15px;
+}
+._journal *::-webkit-scrollbar {
+  display: none;
+}
+._journal .message.coach h2 img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+._journal .message-box svg {
+  fill: var(--red);
+  color: var(--red);
+  height: 32px;
+  width: 32px;
+}
+._journal .message-box input::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(113, 113, 113);
+}
+
+._journal .suggestions {
+  position: absolute;
+  bottom: calc(100% + 1rem);
+  display: flex;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+._journal .suggestions::-webkit-scrollbar {
+  display: none;
+}
+._journal .suggestions p {
+  font-weight: 400;
+  font-size: 13px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #292929;
+  color: #ccc;
+  white-space: nowrap;
+  width: fit-content;
+  flex: 1;
+  transition: all 0.3s var(--curve);
+  background-color: #2a2a2a;
+}
+._journal .suggestions p:hover {
+  border-color: var(--red);
+  color: white;
+}
+._journal .message .content * {
+  all: revert !important;
+}

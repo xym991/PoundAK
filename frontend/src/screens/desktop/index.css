@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-oxanium: "Oxanium", sans-serif;
+  --red: #9e3418;
+  --redcc: #9e3418cc;
+  --redaa: #9e3418aa;
+  --red99: #9e341899;
+  --red77: #9e341877;
+  --red55: #9e341855;
+  --orange: #ff4e1d;
+  --orangeaa: #ff4e1daa;
+  --orange88: #ff4e1d88;
+  --orange44: #ff4e1d44;
+  --orange22: #ff4e1d22;
+  --green: #5db329;
+  --curve: cubic-bezier(0.2, 1, 0.4, 1);
+  --global-height: 776px;
+  --global-width: 1570px;
+}
+
+body {
+  font-family: var(--font-oxanium);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  cursor:
+    url("/assets/images/Cursor.png") 0 0,
+    auto !important;
+  user-select: none;
+  font-family: var(--font-oxanium);
+}
+.__app {
+  display: flex;
+  align-items: center;
+  justify-content: c;
+}
+#global-toggle {
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+  top: 8px;
+}
+
+#global-toggle li {
+  display: flex;
+  background-color: #555;
+  height: 30px;
+  padding: 8px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+}
+
+._screen {
+  width: var(--global-width);
+  height: var(--global-height);
+  margin: auto;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #060606; */
+  position: absolute;
+  background-image: url("/assets/images/desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+._screen #portal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+._screen .main {
+  height: 100%;
+  width: 100%;
+  margin-top: 64px;
+  padding: 8px;
+}
+._screen .left {
+  width: 160px;
+  gap: 0.5rem;
+  height: 100%;
+}
+._screen .right {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000b0;
+}
+.text-orange {
+  color: var(--orange);
+}
+._onboarding h1 {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-size: 2.2rem;
+  margin-top: -1rem;
+}
+._onboarding p {
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
